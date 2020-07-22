@@ -16,14 +16,14 @@ var withdrawBtn =document.getElementById('withBtn');
 
 depositBtn.addEventListener('click' , function(){
     //deposit
-   var depositValue= document.getElementById('depoId').value;
+   var depositValue= updateWithDraw('depoId')
 
    var depositAmount =parseFloat(depositValue);
 
   updateSpanText('currentDeposit', depositAmount);
  
   updateSpanText('currentBalance', depositAmount );
-
+ 
 
 });
 
@@ -36,21 +36,34 @@ function updateSpanText(id , depositAmount){
 
 
 
-
+//withdraw function 
 
 withdrawBtn.addEventListener('click', function(){
-    var withdrawMoney=document.getElementById('drawId').value;
-    var moneyWitdraw =parseFloat(withdrawMoney);
+   
 
-    var withDrawAmout =document.getElementById('withdrawAmont').innerText;
-    
-    var amoutWithdraw =parseFloat(withDrawAmout);
+     var withdrawNum = updateWithDraw('drawId');
+     console.log(withdrawNum);
 
-    document.getElementById('withdrawAmont').innerHTML= moneyWitdraw + amoutWithdraw;
-    document.getElementById('currentBalance').innerText -=moneyWitdraw ;
-
-    withdrawMoney=document.getElementById('drawId').value='';
+     updateSpanText()
+   
 })
+
+function updateWithDraw(id, moneyWitdraw ){
+
+    var amount=document.getElementById(id).value;
+    var amountNumber =parseFloat(amount);
+    // var total =amount - amountNumber;
+    return amountNumber;
+
+    // var withDrawAmout =document.getElementById(id).innerText;
+    
+    // var amoutWithdraw =parseFloat(withDrawAmout); 
+
+    // document.getElementById(id).innerHTML= moneyWitdraw + amoutWithdraw;
+    // document.getElementById(id).innerText -=moneyWitdraw ;
+
+    // withdrawMoney=document.getElementById(id).value='';
+}
 
 
 
