@@ -36,28 +36,30 @@
 
 
 <div id="deposit-Area"> 
-    <div class="money-body">
-      <div class="row ">
-          <div class="col-md-4">
-              <div class="d-flex money-body dollar-body">
-                  <h2>Deposit</h2>
-                  <h1><span>$</span>00</h1>
-              </div>
-          </div>
-          <div class="col-md-4">
-              <div class="d-flex money-body dollar-body">
-                  <h2>Deposit</h2>
-                  <h1><span>$</span>00</h1>
-              </div>
-          </div>
-          <div class="col-md-4">
-              <div class="d-flex money-body dollar-body">
-                  <h2>Deposit</h2>
-                  <h1><span >$</span>1552</h1>
-              </div>
-          </div>
-      </div>
-  </div>
+    <div class="row ">
+    
+        <div class="col-md-4 ">
+            <div class="deposit status">
+                <h2>Deposit</h2>
+                <h1>$<span id="currentDeposit">00</span></h1>
+            </div>
+        </div>
+          <div class="col-md-4 ">
+            <div class="balance  status ">
+                <h2>withdraw</h2>
+                <h1>$<span id="withdrawAmont">00</span></h1>
+            </div>
+        </div>
+        <div class=" col-md-4 ">
+            <div class="withdraw  status">
+                <h2>Balance</h2>
+                <h1>$<span id="currentBalance">100</span></h1>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+ 
   <div class="money-calculation">
      
       <div class="row col-md-6">
@@ -65,8 +67,10 @@
             <div class="card justify-content-center ">
               <div class="card-body align-items-center ">
                 <h5 class="card-title">Deposit</h5>
-                <input class="mb-1" type="number">
-               <button type="button" class="btn btn-primary ">Deposite</button>
+                <input class="amout-class" id="depoId" type="text" placeholder="$ Amount of deposit">
+             <br>
+             <br>
+               <button id="depoBtn" class="btn btn-primary ">Deposite</button>
               </div>
             </div>
           </div>
@@ -74,12 +78,15 @@
               <div class="card justify-content-center ">
                 <div class="card-body align-items-center ">
                   <h5 class="card-title">Withdraw</h5>
-                  <input class="mb-1" type="number">
-                 <button type="button" class="btn btn-primary ">Withdraw</button>
+                  <input class="amout-class" id="drawId" type="text" placeholder="$ Amount of withdraw">
+          <br>
+          <br>
+           <button id="withBtn"  class="btn btn-primary ">Withdraw</button>
                 </div>
               </div>
             </div>
         </div>
+
       </div>
   
   </div>

@@ -1,6 +1,6 @@
 body{
     margin: 0;
-    padding: 0;
+   padding: 50px;
 
 }
 .form-body{
@@ -31,21 +31,10 @@ body{
     box-shadow: 5px 5px 10px gray;
    
 }
-.form-control input{
-  
-}
-
-.money-calculation{
- display: flex;
-justify-content: center;
 
 
-}
-.custom-body{
- padding: 20px;
- width:100% ;
-  
- }
+
+
 
  .money-body{
      display: flex;
@@ -58,21 +47,44 @@ justify-content: center;
     color: #fff;
  }
 
-  .dollar-body{
-    display: flex;
-    flex-direction: column;
-    background-color: tomato;
-  padding: 30px;
-  width: 300px;
 
- }
 
- .dollar-body span{
-     margin-right: 10px;
- }
 
  #deposit-Area{
-     
+
      display: none;
  }
+
+
+
+
+
+
+.status{
+    margin: 0 20px;
+    border-radius: 10px;
+    color: ivory;
+    padding: 20px;
+}
+
+ .deposit{
+     background-color: tomato;
+ }
+ .balance{
+    background-color: indianred;
+   
+}
  
+.withdraw{
+    background-color: orange;
+  
+}
+
+.money-calculation{
+    display: flex;
+   justify-content: center;
+   
+   
+   }
+
+
