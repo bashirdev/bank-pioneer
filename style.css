@@ -1,0 +1,78 @@
+body{
+    margin: 0;
+    padding: 0;
+
+}
+.form-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+ 
+   
+
+}
+.form-div h1{
+    width: 800px;
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: 700;
+   
+}
+
+.input-body{
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    width: 100%;
+   padding: 40px;
+    color: white;
+    box-shadow: 5px 5px 10px gray;
+   
+}
+.form-control input{
+  
+}
+
+.money-calculation{
+ display: flex;
+justify-content: center;
+
+
+}
+.custom-body{
+ padding: 20px;
+ width:100% ;
+  
+ }
+
+ .money-body{
+     display: flex;
+    justify-content: center;
+     
+    margin: 5px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+    color: #fff;
+ }
+
+  .dollar-body{
+    display: flex;
+    flex-direction: column;
+    background-color: tomato;
+  padding: 30px;
+  width: 300px;
+
+ }
+
+ .dollar-body span{
+     margin-right: 10px;
+ }
+
+ #deposit-Area{
+     
+     display: none;
+ }
+ 
