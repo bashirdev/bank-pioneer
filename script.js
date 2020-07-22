@@ -17,22 +17,26 @@ var withdrawBtn =document.getElementById('withBtn');
 depositBtn.addEventListener('click' , function(){
     //deposit
    var depositValue= document.getElementById('depoId').value;
+
    var depositAmount =parseFloat(depositValue);
-   var currentDeposit= document.getElementById('currentDeposit').innerText;
-    var currentDepositNumber = parseFloat(currentDeposit);
 
-  var total = depositAmount +  currentDepositNumber ;
-
-  document.getElementById('currentDeposit').innerText =total;
- //balance
-  var depositBalance =document.getElementById('currentBalance').innerText;
-  var currrentBalance =parseFloat(depositBalance);
-  document.getElementById('currentBalance').innerText =currrentBalance + depositAmount;
-  document.getElementById('depoId').value = '';
-
+  updateSpanText('currentDeposit', depositAmount);
+ 
+  updateSpanText('currentBalance', depositAmount );
 
 
 });
+
+function updateSpanText(id , depositAmount){
+    var depositBalance =document.getElementById(id).innerText;
+    var currrentBalance =parseFloat(depositBalance);
+    document.getElementById(id).innerText =currrentBalance + depositAmount;
+    document.getElementById('depoId').value = '';
+}
+
+
+
+
 
 withdrawBtn.addEventListener('click', function(){
     var withdrawMoney=document.getElementById('drawId').value;
@@ -47,3 +51,6 @@ withdrawBtn.addEventListener('click', function(){
 
     withdrawMoney=document.getElementById('drawId').value='';
 })
+
+
+
